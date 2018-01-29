@@ -1,0 +1,14 @@
+{
+  "name": "project__news_feed",
+  "version": "1.0.0",
+  "description": "News feed which fetches contents from newsapi.org",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "Vikas Kumar (@dzenvikas)",
+  "license": "MIT",
+  "devDependencies": {
+    "node-sass": "^4.7.2"
+  }
+}

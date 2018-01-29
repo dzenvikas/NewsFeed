@@ -15,42 +15,49 @@
         left: 3rem;
         transform: translateY(-50%);
     }
+
+    &__btn {
+        position: absolute;
+        top: 50%;
+        right: 3rem;
+        transform: translateY(-50%);
+    }
 }
 
 
 .button {
-    background-color: $color-primary;
+    position: relative;
     font-size: 2rem;
-    width: 15rem;
-    padding: 1.5rem 3rem;
-    border-radius: 4rem;
-    text-transform: uppercase;
+    width: 13rem;
+    height: 5rem;
+    border-radius: 5rem;
     color: $color-white;
-    display: block;
-    text-align: center;
     cursor: pointer;
     box-shadow: $box-shadow-light;
     text-decoration: none;
-    transition: all .2s;
+    text-transform: uppercase;
+    transition: all ease-in-out .2s;
+    backface-visibility: hidden;
 
-    &:hover {
-        box-shadow: $box-shadow-medium;
+    &:active {
+        transform: scale(.9);
     }
 
-
-    //REFRESH BUTTON
-    &__refresh {
+    &__text{
         position: absolute;
         top: 50%;
-        right: 3rem;
-        float: right;
-        transform: translateY(-50%);
-        
-        &:active {
-            transform: translateY(-50%) scale(.8);
-        }
-
+        left: 50%;
+        // background-color: orangered;
+        transform: translate(-50%, -50%);
     }
 
+   &__green {
+        background-color: $color-primary;
+        transition: all .2s;
+
+        &:hover {
+            box-shadow: $box-shadow-medium;
+        }
+    }
 }
 

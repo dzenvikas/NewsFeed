@@ -25,7 +25,7 @@ body {
   .card__text-box {
     padding: 1rem;
     position: relative;
-    height: 19rem; }
+    height: 20rem; }
   .card__image {
     width: 100%;
     height: 15rem;
@@ -69,31 +69,37 @@ body {
     top: 50%;
     left: 3rem;
     transform: translateY(-50%); }
-
-.button {
-  background-color: #55c57a;
-  font-size: 2rem;
-  width: 15rem;
-  padding: 1.5rem 3rem;
-  border-radius: 4rem;
-  text-transform: uppercase;
-  color: #fff;
-  display: block;
-  text-align: center;
-  cursor: pointer;
-  box-shadow: 0.1rem 0.2rem 1rem rgba(0, 0, 0, 0.15);
-  text-decoration: none;
-  transition: all .2s; }
-  .button:hover {
-    box-shadow: 0.1rem 0.2rem 1.5rem rgba(0, 0, 0, 0.35); }
-  .button__refresh {
+  .header__btn {
     position: absolute;
     top: 50%;
     right: 3rem;
-    float: right;
     transform: translateY(-50%); }
-    .button__refresh:active {
-      transform: translateY(-50%) scale(0.8); }
+
+.button {
+  position: relative;
+  font-size: 2rem;
+  width: 13rem;
+  height: 5rem;
+  border-radius: 5rem;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0.1rem 0.2rem 1rem rgba(0, 0, 0, 0.15);
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all ease-in-out .2s;
+  backface-visibility: hidden; }
+  .button:active {
+    transform: scale(0.9); }
+  .button__text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  .button__green {
+    background-color: #55c57a;
+    transition: all .2s; }
+    .button__green:hover {
+      box-shadow: 0.1rem 0.2rem 1.5rem rgba(0, 0, 0, 0.35); }
 
 .row {
   max-width: 114rem;

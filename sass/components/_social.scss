@@ -1,0 +1,21 @@
+.social {
+    list-style: none;
+
+    &__item {
+        font-size: 3rem;
+        color: $color-primary-dark;
+        // color: $color-black;
+        display: inline-block;
+        cursor: pointer;
+        transition: all .2s ease-in-out;
+
+        &:not(:last-child) {
+            margin-right: 3rem;
+        }
+
+        &:hover {
+            transform: scale(1.3);
+        }
+    }
+
+}

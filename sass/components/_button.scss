@@ -1,34 +1,9 @@
 
 
-.header {
-    // background-color: darkgrey;
-    height: 15rem;
-    width: 100%;
-    position: relative;
-
-    h1 {
-        font-size: 3.5rem;
-        color: $color-primary-dark;
-        font-weight: 600;
-        position: absolute;
-        top: 50%;
-        left: 3rem;
-        transform: translateY(-50%);
-    }
-
-    &__btn {
-        position: absolute;
-        top: 50%;
-        right: 3rem;
-        transform: translateY(-50%);
-    }
-}
-
-
 .button {
     position: relative;
     font-size: 2rem;
-    width: 13rem;
+    width: 19rem;
     height: 5rem;
     border-radius: 5rem;
     color: $color-white;
@@ -49,6 +24,7 @@
         left: 50%;
         // background-color: orangered;
         transform: translate(-50%, -50%);
+        margin-left: 1rem;
     }
 
    &__green {

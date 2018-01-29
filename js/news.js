@@ -2,7 +2,7 @@
 // Author: Vikas Kumar (@dzenvikas)
 // 
 
-country_code = 'nz';
+country_code = 'us';
 
 var url = 'https://newsapi.org/v2/top-headlines?' +
     'country=' + country_code + '&' +

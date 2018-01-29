@@ -1,8 +1,27 @@
+
+
+.header {
+    // background-color: darkgrey;
+    height: 15rem;
+    width: 100%;
+    position: relative;
+
+    h1 {
+        font-size: 3.5rem;
+        color: $color-primary-dark;
+        font-weight: 600;
+        position: absolute;
+        top: 50%;
+        left: 3rem;
+        transform: translateY(-50%);
+    }
+}
+
+
 .button {
     background-color: $color-primary;
-    font-size: 2.2rem;
+    font-size: 2rem;
     width: 15rem;
-    margin: 5rem auto;
     padding: 1.5rem 3rem;
     border-radius: 4rem;
     text-transform: uppercase;
@@ -12,12 +31,26 @@
     cursor: pointer;
     box-shadow: $box-shadow-light;
     text-decoration: none;
+    transition: all .2s;
 
     &:hover {
         box-shadow: $box-shadow-medium;
     }
-    
-    &:active {
-        transform: scale(.98);
+
+
+    //REFRESH BUTTON
+    &__refresh {
+        position: absolute;
+        top: 50%;
+        right: 3rem;
+        float: right;
+        transform: translateY(-50%);
+        
+        &:active {
+            transform: translateY(-50%) scale(.8);
+        }
+
     }
+
 }
+

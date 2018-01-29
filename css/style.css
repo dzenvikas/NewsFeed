@@ -57,11 +57,23 @@ body {
     bottom: 1rem;
     color: #747474; }
 
+.header {
+  height: 15rem;
+  width: 100%;
+  position: relative; }
+  .header h1 {
+    font-size: 3.5rem;
+    color: #28b485;
+    font-weight: 600;
+    position: absolute;
+    top: 50%;
+    left: 3rem;
+    transform: translateY(-50%); }
+
 .button {
   background-color: #55c57a;
-  font-size: 2.2rem;
+  font-size: 2rem;
   width: 15rem;
-  margin: 5rem auto;
   padding: 1.5rem 3rem;
   border-radius: 4rem;
   text-transform: uppercase;
@@ -70,11 +82,18 @@ body {
   text-align: center;
   cursor: pointer;
   box-shadow: 0.1rem 0.2rem 1rem rgba(0, 0, 0, 0.15);
-  text-decoration: none; }
+  text-decoration: none;
+  transition: all .2s; }
   .button:hover {
     box-shadow: 0.1rem 0.2rem 1.5rem rgba(0, 0, 0, 0.35); }
-  .button:active {
-    transform: scale(0.98); }
+  .button__refresh {
+    position: absolute;
+    top: 50%;
+    right: 3rem;
+    float: right;
+    transform: translateY(-50%); }
+    .button__refresh:active {
+      transform: translateY(-50%) scale(0.8); }
 
 .row {
   max-width: 114rem;

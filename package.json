@@ -1,5 +1,5 @@
 {
-  "name": "project__news_feed",
+  "name": "project__newz_feed",
   "version": "1.0.0",
   "description": "News feed which fetches contents from newsapi.org",
   "main": "index.js",

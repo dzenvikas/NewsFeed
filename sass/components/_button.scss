@@ -1,0 +1,23 @@
+.button {
+    background-color: $color-primary;
+    font-size: 2.2rem;
+    width: 15rem;
+    margin: 5rem auto;
+    padding: 1.5rem 3rem;
+    border-radius: 4rem;
+    text-transform: uppercase;
+    color: $color-white;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: $box-shadow-light;
+    text-decoration: none;
+
+    &:hover {
+        box-shadow: $box-shadow-medium;
+    }
+    
+    &:active {
+        transform: scale(.98);
+    }
+}

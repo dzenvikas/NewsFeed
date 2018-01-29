@@ -2,7 +2,7 @@
 
 .button {
     position: relative;
-    font-size: 2rem;
+    font-size: 1.8rem;
     width: 19rem;
     height: 5rem;
     border-radius: 5rem;
@@ -24,7 +24,12 @@
         left: 50%;
         // background-color: orangered;
         transform: translate(-50%, -50%);
-        margin-left: 1rem;
+        display: inline-block;
+
+        span {
+            padding-left: .9rem;
+        }
+
     }
 
    &__green {

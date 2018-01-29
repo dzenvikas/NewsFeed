@@ -2,7 +2,7 @@
 // Author: Vikas Kumar (@dzenvikas)
 // 
 
-country_code = 'us';
+country_code = 'us'; //country code
 
 var url = 'https://newsapi.org/v2/top-headlines?' +
     'country=' + country_code + '&' +
@@ -14,7 +14,7 @@ fetch(req)
     .then(response => response.json())
         .then(result => {
             i = 1;
-            total_div = 8
+            total_div = 12
             while (i <= (total_div)) {
                 image = result['articles'][i-1]['urlToImage'];
                 title = result['articles'][i-1]['title'];

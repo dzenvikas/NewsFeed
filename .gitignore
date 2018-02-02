@@ -4,4 +4,4 @@ IGNORED FILES, DIRECTORIES
 
 node_modules
 package-lock.json
-
+.vscode
